@@ -173,7 +173,7 @@ async def nsfw_precheck(message):
         True if NSFW content is detected, False otherwise.
     """
     if is_nsfw(message.text):
-        return True
+        return False
 
     reply_to = message.reply_to_message
     if not reply_to:
