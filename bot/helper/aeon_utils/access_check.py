@@ -91,8 +91,8 @@ async def error_check(message):
         if token_msg:
             msg.append(token_msg)
 
-    #if await nsfw_precheck(message):
-       # msg.append("NSFW detected")
+    # if await nsfw_precheck(message):
+    # msg.append("NSFW detected")
 
     if msg:
         username = message.from_user.username
